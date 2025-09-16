@@ -14,8 +14,8 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: BotonPersonalizado(
-            texto: 'Click Me',
-            onPressed: null, // Aquí puedes definir la función que se ejecutará al presionar el botón
+            texto: 'BOTON',
+            onPressed: null, 
           ),
         ),
       ),
@@ -40,8 +40,12 @@ class BotonPersonalizado extends StatelessWidget{
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
         decoration: BoxDecoration(
-          color: const Color(0xFF3333FF),
+          color: const Color.fromARGB(255, 4, 243, 12),
           borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: Colors.black, width:2, 
+          ),
+
           boxShadow: [
             BoxShadow(
               color: const Color(0xFF000000).withOpacity(0.2),
@@ -62,3 +66,4 @@ class BotonPersonalizado extends StatelessWidget{
     );
   }
 }
+
